@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日正念 | Daily Mindfulness</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts 的思源宋體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <p id="quote-text">正在為您靜心尋找今日的一句話...</p>
+            <p id="quote-author"></p>
+        </main>
+        <footer class="footer">
+            <p>Quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes.io</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

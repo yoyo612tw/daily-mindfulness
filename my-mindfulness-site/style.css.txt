@@ -1,0 +1,76 @@
+/* 基本設定 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Noto Serif TC', serif; /* 使用思源宋體 */
+    background-color: #f4f1ea; /* 溫暖的米白色背景 */
+    color: #4a4a4a; /* 柔和的深灰色文字 */
+}
+
+/* 主要容器，使用 Flexbox 讓內容垂直置中 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* 內容區塊 */
+.content {
+    text-align: center;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out; /* 淡入動畫效果 */
+}
+
+/* 語錄文字樣式 */
+#quote-text {
+    font-size: 1.5rem; /* 調整主要文字大小 */
+    line-height: 1.8;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* 作者文字樣式 */
+#quote-author {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+#quote-author::before {
+    content: '—';
+    margin-right: 0.5em;
+}
+
+/* 頁尾樣式 */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.footer a {
+    color: inherit; /* 連結顏色繼承父元素 */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* 淡入動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
